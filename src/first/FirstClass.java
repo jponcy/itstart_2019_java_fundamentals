@@ -17,6 +17,10 @@ public class FirstClass {
      * Commentaire qui ne deviendra pas de la documentation (generation documentation HTML).
      */
     public static void main(String[] args) {
+        ExoBoucles.moreOrLess();
+    }
+
+    private static void examples() {
         Integer i = 3;
         int j = 2;
         
