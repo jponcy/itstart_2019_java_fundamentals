@@ -2,21 +2,30 @@ format 221
 
 classcanvas 128002 class_ref 128002 // Skate
   classdiagramsettings member_max_width 0 end
-  xyz 26.8 51.4 2000
+  xyz 6 49.4 2000
 end
 note 128130 "Q1
 ===
-
-Représenter cet classe en Java. Puis faire un programme créant 
+Représenter cette classe en Java. Puis faire un programme (autre classe) créant 
 deux objets à partir de cette classe et qui affecte une valeur 
 pour chaque attributs.
 
-
 Q2
 ===
-
 Ajouter des constructeurs permettant de faire l'affectation des 4 
 champs d'un coup. L'un de nos deux skates sera désormais initialisé
-en utilisant ce nouveau constructeur (l'autre restera comme avant)."
-  xyzwh 211 32 2000 479 258
+en utilisant ce nouveau constructeur (l'autre restera comme avant).
+
+Q3
+===
+Dans le point d'entré. Créer un tableau de chaînes de caractères contenant plusieurs noms de marques.
+
+Q4
+===
+Déclarer et initialiser un tableau de 200 skates avec des valeurs aléatoires (on piochera dans le tableau de la Q3 pour le nom d'une marque.
+
+Q5
+===
+Changer les attributs afin qu'ils aient tous une visibilité \"private\" (et adapter le code)."
+  xyzwh 141.4 6 2000 682 438
 end
