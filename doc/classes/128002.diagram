@@ -2,6 +2,21 @@ format 221
 
 classcanvas 128002 class_ref 128002 // Skate
   classdiagramsettings member_max_width 0 end
-  xyz 127 121 2000
+  xyz 26.8 51.4 2000
 end
+note 128130 "Q1
+===
+
+Représenter cet classe en Java. Puis faire un programme créant 
+deux objets à partir de cette classe et qui affecte une valeur 
+pour chaque attributs.
+
+
+Q2
+===
+
+Ajouter des constructeurs permettant de faire l'affectation des 4 
+champs d'un coup. L'un de nos deux skates sera désormais initialisé
+en utilisant ce nouveau constructeur (l'autre restera comme avant)."
+  xyzwh 211 32 2000 479 258
 end
