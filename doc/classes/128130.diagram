@@ -1,0 +1,16 @@
+format 221
+
+classcanvas 128130 class_ref 128130 // Skate
+  classdiagramsettings member_max_width 0 end
+  xyz 353 81 2000
+end
+classcanvas 128258 class_ref 128258 // Magasin
+  classdiagramsettings member_max_width 0 end
+  xyz 91 115 2000
+end
+relationcanvas 128386 relation_ref 128002 // <directional aggregation>
+  from ref 128258 z 2001 to ref 128130
+  role_a_pos 301 116 3000 no_role_b
+  no_multiplicity_a multiplicity_b_pos 171 152 3000
+end
+end

@@ -1,6 +1,6 @@
 format 221
 "classes"
-  revision 1
+  revision 2
   modified_by 2 "jonathan"
 
 
@@ -8,7 +8,7 @@ format 221
   // class settings
   default_attribute_visibility private default_relation_visibility private default_operation_visibility public
   
-  classdiagramsettings draw_all_relations yes hide_attributes no hide_operations no hide_getset_operations no hide_ports no show_members_full_definition yes show_members_visibility no show_members_stereotype yes show_members_context no show_members_multiplicity yes show_members_initialization yes show_attribute_modifiers yes member_max_width 127 show_parameter_dir yes show_parameter_name yes package_name_in_tab no class_drawing_mode natural drawing_language uml show_context_mode no auto_label_position yes show_relation_modifiers no show_relation_visibility no show_infonote no shadow yes gradient none show_stereotype_properties no end
+  classdiagramsettings draw_all_relations yes hide_attributes no hide_operations no hide_getset_operations no hide_ports no show_members_full_definition yes show_members_visibility yes show_members_stereotype yes show_members_context no show_members_multiplicity yes show_members_initialization yes show_attribute_modifiers yes member_max_width 127 show_parameter_dir yes show_parameter_name yes package_name_in_tab no class_drawing_mode natural drawing_language uml show_context_mode no auto_label_position yes show_relation_modifiers no show_relation_visibility no show_infonote no shadow yes gradient none show_stereotype_properties no end
   
   classcompositediagramsettings auto_label_position yes draw_all_relations yes shadow yes gradient none end
   
@@ -64,12 +64,12 @@ format 221
     
     activitydiagramsettings
      end
-    classdiagram 128002 "main_class"
+    classdiagram 128002 "tp1"
       classdiagramsettings member_max_width 0 end
       size A4
     end
 
-    class 128002 "Skate"
+    class 128002 "SkateWithBadEncapsulation"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -82,7 +82,7 @@ ${members}}
       mysql_decl ""
       
       attribute 128002 "largeur"
-	private explicit_type "float"
+	public explicit_type "float"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
@@ -94,7 +94,7 @@ ${members}}
       end
 
       attribute 128130 "prix"
-	private explicit_type "float"
+	public explicit_type "float"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
@@ -103,12 +103,10 @@ ${members}}
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
-	get_oper operation_ref 128002 // get_prix
-	set_oper operation_ref 128130 // set_prix
       end
 
       attribute 128258 "marque"
-	private explicit_type "string"
+	public explicit_type "string"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
@@ -120,7 +118,7 @@ ${members}}
       end
 
       attribute 128386 "nbRoues"
-	private explicit_type "int"
+	public explicit_type "int"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
@@ -131,5 +129,116 @@ ${members}}
 	MysqlColumn
       end
     end
+
+    classdiagram 128130 "tp2"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+
+    class 128130 "Skate"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 128514 "largeur"
+	private explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	get_oper operation_ref 128514 // get_largeur
+	set_oper operation_ref 128642 // set_largeur
+      end
+
+      attribute 128642 "prix"
+	private explicit_type "float"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	get_oper operation_ref 128770 // get_prix
+	set_oper operation_ref 128898 // set_prix
+      end
+
+      attribute 128770 "marque"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	get_oper operation_ref 129026 // get_marque
+	set_oper operation_ref 129154 // set_marque
+      end
+
+      attribute 128898 "nbRoues"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	get_oper operation_ref 129282 // get_nbRoues
+	set_oper operation_ref 129410 // set_nbRoues
+      end
+
+    end
+
+    class 128258 "Magasin"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 135426 "nom"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      classrelation 128002 // skates (<directional aggregation>)
+	relation 128002 o-->
+	  a role_name "skates" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128002 // skates (<directional aggregation>)
+	  b multiplicity "1..*" parent class_ref 128130 // Skate
+      end
+    end
   end
+preserve_bodies
+
 end

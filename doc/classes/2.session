@@ -1,0 +1,16 @@
+window_sizes 1920 1016 450 1464 878 81
+cleanlooks_style
+diagrams
+  classdiagram_ref 128002 // tp1
+    1171 671 180 A4 0 0
+  active  classdiagram_ref 128130 // tp2
+    1464 878 100 A4 0 0
+end
+show_stereotypes
+selected class_ref 128258 // Magasin
+open
+  class_ref 128002 // SkateWithBadEncapsulation
+  class_ref 128130 // Skate
+  class_ref 128258 // Magasin
+end
+end
