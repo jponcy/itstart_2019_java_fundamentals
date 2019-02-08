@@ -1,4 +1,4 @@
-package com.tactfactory.itstart;
+package com.tactfactory.itstart.vehicule;
 
 public class Skate {
     private float largeur;

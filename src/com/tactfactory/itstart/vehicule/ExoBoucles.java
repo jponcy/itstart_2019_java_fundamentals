@@ -1,4 +1,4 @@
-package com.tactfactory.itstart;
+package com.tactfactory.itstart.vehicule;
 
 import java.util.Scanner;
 
