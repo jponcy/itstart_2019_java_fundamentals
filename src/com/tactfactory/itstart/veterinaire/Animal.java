@@ -2,7 +2,7 @@ package com.tactfactory.itstart.veterinaire;
 
 import java.time.LocalDate;
 
-public abstract class Animal {
+public abstract class Animal implements Dialogeur {
     private String name;
     private LocalDate dateDeNaissance;
     private Race race;
@@ -23,6 +23,7 @@ public abstract class Animal {
         return result;
     }
 
+    @Override
     public void parler() {
         System.out.println("* gratte *");
     }
